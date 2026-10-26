@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Create Blog - BlogSphere</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                Blog<span>Sphere</span>
+            </a>
+
+            <nav>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="index.html#categories">
+                    Categories
+                </a>
+
+                <a href="create.html" class="create-btn">
+                    + Create Blog
+                </a>
+
+                <button
+                    id="themeBtn"
+                    class="theme-btn"
+                >
+                    🌙
+                </button>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- Create Blog -->
+    <main class="create-page">
+
+        <div class="form-container">
+
+            <div class="form-header">
+
+                <p class="section-label">
+                    CREATE YOUR STORY
+                </p>
+
+                <h1>
+                    Write a New Blog
+                </h1>
+
+                <p>
+                    Share your thoughts, knowledge and experiences.
+                </p>
+
+            </div>
+
+
+            <form id="blogForm">
+
+
+                <!-- Title -->
+                <div class="form-group">
+
+                    <label for="title">
+                        Blog Title
+                    </label>
+
+                    <input
+                        type="text"
+                        id="title"
+                        placeholder="Enter your blog title"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Author -->
+                <div class="form-group">
+
+                    <label for="author">
+                        Author Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="author"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Category -->
+                <div class="form-group">
+
+                    <label for="category">
+                        Category
+                    </label>
+
+                    <select id="category" required>
+
+                        <option value="">
+                            Select Category
+                        </option>
+
+                        <option value="Technology">
+                            Technology
+                        </option>
+
+                        <option value="Travel">
+                            Travel
+                        </option>
+
+                        <option value="Lifestyle">
+                            Lifestyle
+                        </option>
+
+                        <option value="Education">
+                            Education
+                        </option>
+
+                        <option value="Business">
+                            Business
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Image -->
+                <div class="form-group">
+
+                    <label for="image">
+                        Image URL
+                    </label>
+
+                    <input
+                        type="url"
+                        id="image"
+                        placeholder="https://example.com/image.jpg"
+                    >
+
+                    <small>
+                        Optional. You can paste an image URL.
+                    </small>
+
+                </div>
+
+
+                <!-- Content -->
+                <div class="form-group">
+
+                    <label for="content">
+                        Blog Content
+                    </label>
+
+                    <textarea
+                        id="content"
+                        rows="12"
+                        placeholder="Write your blog here..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- Buttons -->
+                <div class="form-buttons">
+
+                    <a
+                        href="index.html"
+                        class="cancel-btn"
+                    >
+                        Cancel
+                    </a>
+
+                    <button
+                        type="submit"
+                        class="main-btn"
+                    >
+                        Publish Blog
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

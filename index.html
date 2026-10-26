@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BlogSphere - Home</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                Blog<span>Sphere</span>
+            </a>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#categories">Categories</a>
+                <a href="create.html" class="create-btn">+ Create Blog</a>
+                <button id="themeBtn" class="theme-btn">🌙</button>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="container hero-content">
+
+            <div>
+                <p class="hero-small">WELCOME TO BLOGSPHERE</p>
+
+                <h1>
+                    Share Your
+                    <span>Ideas</span>
+                    With The World.
+                </h1>
+
+                <p>
+                    Write, discover and share interesting stories,
+                    knowledge and experiences.
+                </p>
+
+                <a href="create.html" class="main-btn">
+                    Start Writing
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Search -->
+    <section class="search-section">
+
+        <div class="container">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search blogs..."
+            >
+
+        </div>
+
+    </section>
+
+
+    <!-- Categories -->
+    <section id="categories" class="categories">
+
+        <div class="container">
+
+            <h2>Explore Categories</h2>
+
+            <div class="category-buttons">
+
+                <button onclick="filterCategory('All')">
+                    All
+                </button>
+
+                <button onclick="filterCategory('Technology')">
+                    Technology
+                </button>
+
+                <button onclick="filterCategory('Travel')">
+                    Travel
+                </button>
+
+                <button onclick="filterCategory('Lifestyle')">
+                    Lifestyle
+                </button>
+
+                <button onclick="filterCategory('Education')">
+                    Education
+                </button>
+
+                <button onclick="filterCategory('Business')">
+                    Business
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Blog Section -->
+    <main class="container">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="section-label">LATEST STORIES</p>
+                <h2>Recent Blogs</h2>
+            </div>
+
+            <p id="blogCount"></p>
+
+        </div>
+
+
+        <div id="blogContainer" class="blog-grid">
+            <!-- Blogs will be displayed here -->
+        </div>
+
+
+        <div id="noBlogs" class="no-blogs">
+            <h3>No blogs found</h3>
+            <p>Try another search or create a new blog.</p>
+
+            <a href="create.html" class="main-btn">
+                Create Blog
+            </a>
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="container footer-content">
+
+            <div>
+                <h2>BlogSphere</h2>
+
+                <p>
+                    A simple platform for sharing ideas,
+                    stories and knowledge.
+                </p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="create.html">Create Blog</a>
+                <a href="#categories">Categories</a>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 BlogSphere. All Rights Reserved.
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
